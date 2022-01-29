@@ -1,7 +1,6 @@
 const submitDate = document.querySelector('.submit');
 submitDate.addEventListener("click", calcTimeToDate);
 
-
 window.onload = function setminAttributeInputeDate() {
 const today = new Date();
 const year = today.getFullYear();
@@ -13,8 +12,6 @@ const minAttribute = `${year}-${monthToString}-${tomorrowDate}`;
 
 document.getElementById("select_date").setAttribute("min", minAttribute)
 }
-
-
 
 function calcTimeToDate() {
     const startTime = Date.now();
@@ -31,4 +28,3 @@ function rendering(hours, days, years) {
     let outputText = document.querySelector('.output_text');
     outputText.innerHTML = `Left ${years} years ${days} days ${hours-2} hours`;
 }
-
